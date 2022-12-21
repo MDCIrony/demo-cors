@@ -2,7 +2,7 @@ const main = document.querySelector('.row');
 
 async function getTask() {
   try {
-    const response = await fetch('http://127.0.0.1:8000/api/v1/todo/');
+    const response = await fetch('http://127.0.0.1:8000/api/todos/');
     const data = await response.json();
     renderTasks(data);
   } catch (error) {
